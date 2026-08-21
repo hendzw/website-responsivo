@@ -1,0 +1,248 @@
+/* FONTS */
+/*jetbrains e roboto*/
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* LAYOUT GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Jetbrains Mono';
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+/* NAVBAR */
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    background-color: #080344;
+}
+
+.cabecalho span {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #d6d6ff;
+    text-align: center;
+    padding: 20px 0px;
+    border-bottom: 2px solid #221d54;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.menu li a {
+    display: block;
+    color: #d6d6ff;
+    padding: 10px 8px;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+    background-color: #0e066c;
+}
+
+/* SEÇÃO SOBRE */
+
+.secao-sobre {
+    color: #05022b;
+    background-color: #ebebeb;
+    padding: 14px;
+    margin: 2rem 1.125rem 0rem 1.125rem;
+    border-radius: 4px;
+}
+
+.secao-sobre p {
+    font-family: 'Roboto';
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 1.125rem;
+}
+
+/* SEÇÃO TECNOLOGIAS */
+
+.secao-tec {
+    background-color: #080344;
+    color: #d6d6ff;
+    padding: 14px;
+    margin: 2rem 1.125rem 0rem 1.125rem;
+    border-radius: 4px;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.container-card li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #05022b;
+    background-color: #ebebeb;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.icone {
+    height: 5rem;
+    width: auto;
+}
+
+/* SEÇÃO GALERIA DE FOTOS */
+
+.secao-fotos {
+    background-color: #ebebeb;
+    color: #05022b;
+    padding: 14px;
+    margin: 2rem 1.125rem 0rem 1.125rem;
+    border-radius: 4px;
+}
+
+.container-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.secao-fotos img {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* SEÇÃO CONTATO */
+
+.secao-contato {
+    color: #05022b;
+    background-color: #ebebeb;
+    padding: 14px;
+    margin: 2rem 1.125rem 2rem 1.125rem;
+    border-radius: 4px;
+}
+
+.container-enderecos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 2px solid #c2c2c2;
+    padding-bottom: 14px;
+}
+
+.container-links {
+    display: flex;
+    gap: 20px;
+}
+
+.container-links a {
+    display: block;
+    color: #d6d6ff;
+    background-color: #080344;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+.container-links a:hover {
+    background-color: #0e066c;
+}
+
+.container-enderecos p {
+    padding: 6px 10px;
+    font-weight: 500;
+}
+
+/* FORMULÁRIO */
+
+.container-form {
+    margin-top: 14px;
+}
+
+.container-form h3 {
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+.texto-auxiliar {
+    color: #5b5883;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 18.75rem;
+}
+
+.label-comum {
+    font-size: 1.125rem;
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+.input-comum {
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 10px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.input-comum:focus {
+    box-shadow: 0 8px 12px #8d8d8d;
+    ;
+}
+
+.radio-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-sugestao {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-sugestao label {
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+/* MEDIA QUERIES */
+
+/*@media(min-width: 1039px) {
+    .container-fotos {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+        justify-content: space-between;
+    }
+}*/
+
+@media(min-width: 708px){
+
+}
